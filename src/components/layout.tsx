@@ -1,12 +1,22 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
-import Home from "./home";
 
-export default function Layout() {
+import { ReactNode } from "react";
+
+interface LayoutProps {
+  children: ReactNode
+}
+export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <Home />
+      <div className="hero bg-base-200" style={{ height: "80vh", width: "100vw" }}>
+        <div className="hero-content text-center">
+          <div className="artboard" style={{ width: "auto", height: "auto" }}>
+            {children}
+          </div>
+        </div>
+      </div >
       <Footer />
     </>
   )

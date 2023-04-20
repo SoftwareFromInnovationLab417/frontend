@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import { useEffect } from 'react';
-export default function Home() {
+export default function Visit() {
   var constraints = { audio: false, video: { width: 300, height: 300 } };
   useEffect(() => {
     navigator.mediaDevices.getUserMedia(constraints)
@@ -26,18 +26,17 @@ export default function Home() {
     link.download = 'image.png';
     link.href = dataUrl;
     link.click();
+
+    console.log(dataUrl)
   }
 
+
   return (
-    <div className="hero bg-base-200" style={{ height: "80vh" }}>
-      <div className="hero-content text-center">
-        <div className="artboard">
-          <video id='cam' />
-          <br />
-          <button className="btn btn-outline btn-warning" onClick={onclick}>打卡</button>
-          <canvas hidden={true} id="canvas" style={{ height: "10vh", width: "10vw" }}></canvas>
-        </div>
-      </div>
-    </div >
+    <>
+      <video id='cam' />
+      <br />
+      <button className="btn btn-outline btn-warning" onClick={onclick}>打卡</button>
+      <canvas hidden={true} id="canvas" style={{ height: "10vh", width: "10vw" }}></canvas>
+    </>
   )
 }
