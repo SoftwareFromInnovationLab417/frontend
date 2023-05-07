@@ -10,7 +10,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Navbar</a>
+        <a className="btn btn-ghost normal-case text-xl">软件创新实验室人脸打卡系统</a>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">

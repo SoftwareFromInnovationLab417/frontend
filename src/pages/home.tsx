@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Capture picture</title>
+        <title>打卡界面</title>
       </Head>
       <CheckUser />
     </div>

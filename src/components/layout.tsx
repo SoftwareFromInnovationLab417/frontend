@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <div className="hero bg-base-200" style={{ height: "80vh", width: "100vw" }}>
+      <div className="hero bg-base-200" style={{ height: "83vh", width: "100vw" }}>
         <div className="hero-content text-center">
           <div className="artboard" style={{ width: "auto", height: "auto" }}>
             {children}
