@@ -9,7 +9,7 @@ export default function Index() {
         <title>Index</title>
       </Head>
       <h1 onClick={() => {
-        router.push('/login')
+        router.push('/home')
       }}>
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content flex-col lg:flex-row-reverse">

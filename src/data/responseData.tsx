@@ -18,3 +18,10 @@ export const SignState = [
   'signed refund',
   'not signed yesterday'
 ]
+
+export interface UserCheck {
+  userId: string;
+  name: string;
+  similar: number;
+  key: string;
+}

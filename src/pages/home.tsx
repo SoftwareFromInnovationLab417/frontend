@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Login from './login'
-import Visit from '@/components/visit'
+import CheckUser from '@/components/checkUser'
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Capture picture</title>
       </Head>
-      <Visit />
+      <CheckUser />
     </div>
   )
 }

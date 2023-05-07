@@ -28,7 +28,7 @@ export default function ShowUser() {
     if (data.success) {
       let showData = data.data;
       console.log(showData);
-      if (showData.length == 0) {
+      if (showData == null || showData.length == 0) {
         setData([]);
       } else {
         setData(showData);
@@ -72,24 +72,33 @@ export function Table({ data }: TableProp) {
     )
   });
   return (
-    <div className="overflow-x-auto">
-      <table className="table w-full">
-        {/* head*/}
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Number</th>
-            <th>Sing In Time</th>
-            <th>Sing Out Time</th>
-            <th>Day</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dataShow}
-        </tbody>
-      </table>
+    <div>
+      <div className="overflow-x-auto">
+        <div className="sticky top-0 z-10">
+          <table className="table w-full">
+            {/* head*/}
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Sing In Time</th>
+                <th>Sing Out Time</th>
+                <th>Day</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div className="overflow-y-scroll" style={{ height: "47vh" }}>
+          <table className="table w-full">
+            {/* body*/}
+            <tbody>
+              {dataShow}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   )
 
