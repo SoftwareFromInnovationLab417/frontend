@@ -13,12 +13,12 @@ export default function Index() {
       }}>
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">
-            <h1>
+            <span>
               欢迎来到
-            </h1>
-            <h1>
+            </span>
+            <span>
               软件创新实验室
-            </h1>
+            </span>
           </h1>
           <p className="py-6">请遵守实验室规章制度, 并人脸打卡.</p>
           <button className="btn btn-primary">开始打卡</button>

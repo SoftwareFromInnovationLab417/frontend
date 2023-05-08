@@ -8,7 +8,7 @@ export default function Login() {
         <title>Manager Login</title>
       </Head>
       <h1>Manager Login</h1>
-      <LoginForm userMode={false} />
+      <LoginForm />
     </div>
   )
 }

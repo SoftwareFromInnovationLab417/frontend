@@ -8,7 +8,7 @@ interface LayoutProps {
 }
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div>
       <Navbar />
       <div className="hero bg-base-200" style={{ height: "83vh", width: "100vw" }}>
         <div className="hero-content text-center">
@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </div >
       <Footer />
-    </>
+    </div>
   )
 
 }

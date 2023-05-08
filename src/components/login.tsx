@@ -1,9 +1,8 @@
 import { useContext, useState } from 'react'
 import { useRouter } from 'next/router'
-import { AccountData, Manager, buildAccountUrl } from '@/data/account';
+import { Manager, buildAccountUrl } from '@/data/account';
 import { Resp } from '@/data/response';
 import { AppContext } from '@/data/state';
-import { Console } from 'console';
 
 export default function LoginForm() {
   const { state, setState } = useContext(AppContext);

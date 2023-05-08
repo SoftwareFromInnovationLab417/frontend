@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     data: defaultState
   });
   return (
-    <>
+    <div>
       <Head>
         <title>App</title>
       </Head>
@@ -19,6 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </Layout>
       </AppContext.Provider>
-    </>
+    </div>
   )
 }
