@@ -25,9 +25,9 @@ export default function LoginForm() {
 
     const data: Resp<string> = await res.json();
     if (data.success) {
-      // let token = data.data;
+      let token = data.data;
       // TODO: FOR TEST
-      let token = '73c3d744-c526-4d31-9ba6-5b70a344fb4c';
+      // let token = '73c3d744-c526-4d31-9ba6-5b70a344fb4c';
       let manager: Manager = {
         username,
         password,
